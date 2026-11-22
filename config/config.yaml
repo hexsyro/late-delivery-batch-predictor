@@ -1,0 +1,10 @@
+# Non-secret settings. The database URL is read from the environment (.env).
+data_dir: data/raw
+model_dir: models
+report_dir: reports
+training:
+  # Orders purchased before this date are used for training.
+  train_end_date: "2018-06-01"
+batches:
+  first_batch_start: "2018-07-01"
+  window_days: 7

@@ -1,0 +1,1 @@
+-- Raw tables, primary keys and constraints.

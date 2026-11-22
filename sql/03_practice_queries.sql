@@ -1,0 +1,1 @@
+-- Exploratory queries: filtering, joins and aggregations.

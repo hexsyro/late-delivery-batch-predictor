@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "batch-predictor"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas", "numpy", "scikit-learn", "joblib",
+  "sqlalchemy>=2", "psycopg[binary]>=3", "pyyaml", "python-dotenv",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+# Creates a `batch-predictor` command after `pip install -e ".[dev]"`
+batch-predictor = "batch_predictor.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+markers = ["integration: needs a running PostgreSQL (TEST_DATABASE_URL)"]

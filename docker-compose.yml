@@ -1,0 +1,16 @@
+# Local PostgreSQL for development. Start: docker compose up -d   Stop: docker compose down
+services:
+  postgres:
+    image: postgres:16
+    env_file:
+      - .env
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:
