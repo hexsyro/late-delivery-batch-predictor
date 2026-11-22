@@ -1,3 +1,15 @@
+> [!WARNING]
+> **🚧 Work in progress: not yet production-ready**
+>
+> This project is under active development by [@hexsyro](https://github.com/hexsyro).
+> Interfaces, configuration keys and the database schema may change without notice,
+> and some acceptance criteria are not yet met (see [Project status](#project-status)).
+>
+> **Feedback and issues are welcome:** please open a [GitHub issue](../../issues),
+> or reach out on X: [@hexsyro](https://x.com/hexsyro).
+>
+> *Last updated: 22 November 2026*
+
 # 📦 Late-Delivery Batch Predictor
 
 **A scheduled, rerun-safe batch prediction system: PostgreSQL in, validated predictions out.**
@@ -7,8 +19,6 @@ The system reads e-commerce orders from PostgreSQL, validates them, predicts whi
 > Part of a three-repository production-ML series: **batch prediction (this repo)** → `diamond-price-api` (deployed API) → `model-ops-lab` (monitoring, updates, rollback).
 
 ---
-
-![status](https://img.shields.io/badge/status-in%20development-yellow)
 
 ![xxxxxxxxxxxx  xxxxxxxxxxxxxxx xxxxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxxx](outputs/figures/leaderboard_probing.png)
 
@@ -74,7 +84,7 @@ late-delivery-batch-predictor/
 ## 🛠️ Setup
 
 ```bash
-git clone <repo-url> && cd late-delivery-batch-predictor
+git clone https://github.com/hexsyro/late-delivery-batch-predictor && cd late-delivery-batch-predictor
 python -m venv .venv && source .venv/bin/activate     # Windows: .venv\Scripts\activate
 pip install -e ".[dev]"
 cp .env.example .env
