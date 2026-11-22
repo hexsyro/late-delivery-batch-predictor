@@ -3,7 +3,7 @@
 >
 > This project is under active development by [@hexsyro](https://github.com/hexsyro).
 > Interfaces, configuration keys and the database schema may change without notice,
-> and some acceptance criteria are not yet met (see [Project status](#project-status)).
+> and some acceptance criteria are not yet met.
 >
 > **Feedback and issues are welcome:** please open a [GitHub issue](../../issues),
 > or reach out on X: [@hexsyro](https://x.com/hexsyro).
